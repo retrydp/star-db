@@ -1,10 +1,16 @@
-import React from "react";
+import React from 'react';
 
-const Row = ({ left, rigth }) => {
+import './row.css';
+
+const Row = ({ left, right }) => {
   return (
     <div className="row mb2">
-      <div className="col-md-6">{left}</div>
-      <div className="col-md-6">{rigth}</div>
+      <div className="col-md-6">
+        {left}
+      </div>
+      <div className="col-md-6">
+        {right}
+      </div>
     </div>
   );
 };

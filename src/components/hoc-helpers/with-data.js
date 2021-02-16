@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import Spinner from "../spinner";
+import ErrorIndicator from "../error-indicator";
 
 const withData = (View, getData) => {
   return class extends Component {
@@ -14,12 +16,14 @@ const withData = (View, getData) => {
         });
       });
     }
+
     render() {
       const { data } = this.state;
 
       if (!data) {
         return <Spinner />;
       }
+
       return <View {...this.props} data={data} />;
     }
   };

@@ -50,17 +50,11 @@ export default class App extends Component {
       <ErrorBoundry>
         <div className="stardb-app">
           <Header />
-
           <PersonDetails itemId={11} />
-
           <PlanetDetails itemId={5} />
-
           <StarshipDetails itemId={9} />
-
           <PersonList />
-
           <StarshipList />
-
           <PlanetList />
         </div>
       </ErrorBoundry>
